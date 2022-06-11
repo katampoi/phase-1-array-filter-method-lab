@@ -8,6 +8,7 @@ const findMatching = (names, str) => {
 }
     return newDrivers;
 }
+
 const fuzzyMatch = (names, str) => {
 let newArray = [];
 for(const name of names){
@@ -17,13 +18,14 @@ newArray.push(name)
 }
 return newArray;
 }
+
 const matchName = (array, str) => {
     const newArray = [];
     for(const user of array){
     if(user.name.toLowerCase() === str.toLowerCase() || user.hometown.toLowerCase() === str.toLowerCase()){
     newArray.push(user)
-    }
-    }
+}
+}
     return newArray;
-    }
+}
         
